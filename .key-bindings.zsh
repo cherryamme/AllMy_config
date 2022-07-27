@@ -89,9 +89,9 @@ fzf-cd-widget() {
   return $ret
 }
 zle     -N             fzf-cd-widget
-bindkey -M emacs '\ec' fzf-cd-widget
-bindkey -M vicmd '\ec' fzf-cd-widget
-bindkey -M viins '\ec' fzf-cd-widget
+bindkey -M emacs '^|' fzf-cd-widget
+bindkey -M vicmd '^|' fzf-cd-widget
+bindkey -M viins '^|' fzf-cd-widget
 
 # CTRL-R - Paste the selected command from history into the command line
 fzf-history-widget() {
